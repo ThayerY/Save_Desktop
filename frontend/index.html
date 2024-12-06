@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saving App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Saving App</h1>
+
+    <!-- Input Section -->
+    <div class="input-container">
+      <input type="number" id="amount" placeholder="Enter amount" />
+      <button id="add-amount-btn">Add Amount</button>
+      <button id="subtract-amount-btn">Subtract Amount</button>
+    </div>
+
+    <!-- Table Section -->
+    <table>
+      <thead>
+        <tr>
+          <th>Amount</th>
+          <th>Current Amount</th>
+          <th>Total Amount</th>
+          <th>Date</th>
+          <th>Today</th>
+          <th>Time</th>
+          <th>Actions</th> <!-- Column for Edit and Delete buttons -->
+        </tr>
+      </thead>
+      <tbody id="table-body">
+        <!-- Table rows will be dynamically inserted here -->
+      </tbody>
+    </table>
+
+    <!-- Total Amount Section -->
+    <div id="total-amount">Total Amount: 0</div>
+  </div>
+
+  <script type="module" src="./js/script.js"></script>
+</body>
+
+</html>

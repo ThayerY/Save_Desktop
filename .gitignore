@@ -1,0 +1,19 @@
+# Node modules
+node_modules/
+
+# Logs
+*.log
+
+# Environment files
+.env
+
+# Build output
+dist/
+build/
+
+# OS-specific files
+.DS_Store
+
+# npm package-lock file (optional)
+package-lock.json
+

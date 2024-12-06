@@ -1,0 +1,209 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #424242;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  padding: 20px;
+  /* background-color: #ffffffef; */
+  background-color: #f0f0f0f1;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#table-body {
+  background-color: #dad0d0b7;
+  /* White background for the table body */
+}
+
+h1 {
+  text-align: center;
+  color: #4CAF50;
+  margin-bottom: 20px;
+}
+
+/* Input Section */
+.input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.input-container input {
+  margin-right: 10px;
+  padding: 12px 24px;
+  font-size: 16px;
+  width: 400px;
+}
+
+.input-container button {
+  margin-right: 10px;
+  padding: 12px 20px;
+  font-size: 18px;
+}
+
+.input-container button:last-child {
+  margin-right: 0;
+}
+
+#add-amount-btn {
+  background-color: #4CAF50;
+}
+
+#add-amount-btn:hover {
+  background-color: #75ec7b;
+}
+
+#subtract-amount-btn {
+  background-color: red;
+}
+
+#subtract-amount-btn:hover {
+  background-color: rgb(170, 60, 60);
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f4f7f6;
+}
+
+td {
+  background-color: #fff;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+#total-amount {
+  font-size: 26px;
+  font-weight: bold;
+  /* color: #333; */
+  color: #1c04f7;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Buttons in Actions Column */
+td button {
+  display: inline-block;
+  /* Ensure buttons are inline */
+  margin-right: 8px;
+  /* Add spacing between buttons */
+  vertical-align: middle;
+  /* Align buttons to the middle */
+}
+
+.edit-btn {
+  background-color: #4CAF50;
+  /* Green background */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.edit-btn:hover {
+  background-color: #45a049;
+  /* Slightly darker green */
+}
+
+.delete-btn {
+  background-color: #ff4d4d;
+  /* Red background */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.delete-btn:hover {
+  background-color: #ff1a1a;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .input-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  input[type="number"] {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+
+  #total-amount {
+    font-size: 16px;
+  }
+}
+
+
+/* for testing edit button */
+
+.edit-input,
+.edit-date-input,
+.edit-today-input,
+.edit-time-input {
+  width: 100%;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.save-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.save-btn:hover {
+  background-color: #45a049;
+}

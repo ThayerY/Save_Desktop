@@ -1,0 +1,29 @@
+{
+  "name": "saving-app",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start-backend": "node backend/server.js",
+    "start-frontend": "npx live-server frontend",
+    "start": "concurrently \"npm run start-backend\" \"npm run start-frontend\"",
+    "dev-backend": "nodemon backend/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "A simple saving app with backend and frontend integration",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "moment": "^2.30.1",
+    "mongoose": "^8.8.3"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0",
+    "live-server": "^1.2.0",
+    "nodemon": "^3.1.7"
+  }
+}
